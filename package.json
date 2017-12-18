@@ -1,0 +1,19 @@
+{
+  "name": "film-chat",
+  "version": "1.0.0",
+  "description": "Lern WebRTC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladmashtak/film-chat.git"
+  },
+  "author": "Vlad Mashtak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vladmashtak/film-chat/issues"
+  },
+  "homepage": "https://github.com/vladmashtak/film-chat#readme"
+}
