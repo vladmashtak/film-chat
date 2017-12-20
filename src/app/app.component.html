@@ -12,9 +12,18 @@
             <input type="text" name="OtherToken" formControlName="otherToken" placeholder="Token">
           </div>
           <button class="ui button" [class.primary]="user === userState.SENDER" (click)="createPeer(true)">Create Sender</button>
-          <button class="ui button" [class.primary]="user === userState.RECEIVER"(click)="createPeer()">Create Recipient</button>
+          <button class="ui button" [class.primary]="user === userState.RECEIVER" (click)="createPeer()">Create Recipient</button>
           <button class="ui button" (click)="connect()">Connect</button>
         </form>
+      </div>
+    </div>
+    <div class="column">
+      <div class="ui segment">
+        <div class="field">
+          <label>Other</label>
+          <input type="file" name="file" (change)="addFile($event, peer)">
+        </div>
+        <video #video controls="true"></video>
       </div>
     </div>
   </div>
