@@ -122,7 +122,7 @@ var AppComponent = (function () {
     AppComponent.prototype.createPeer = function (initiator) {
         if (initiator === void 0) { initiator = false; }
         if (this.peer === null) {
-            this.peer = new __WEBPACK_IMPORTED_MODULE_1_simple_peer__({ initiator: initiator, trickle: false, objectMode: true });
+            this.peer = new __WEBPACK_IMPORTED_MODULE_1_simple_peer__({ initiator: initiator, trickle: false, objectMode: true, reconnectTimer: 30000 });
             this.user = initiator ? this.userState.SENDER : this.userState.RECEIVER;
             this.handlePeerEvent(this.peer);
         }

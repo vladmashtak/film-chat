@@ -88,7 +88,7 @@ export class AppComponent implements OnInit, AfterViewInit {
 
   public createPeer(initiator: boolean = false): void {
     if (this.peer === null) {
-      this.peer = new SimplePeer({initiator, trickle: false, objectMode: true});
+      this.peer = new SimplePeer({initiator, trickle: false, objectMode: true, reconnectTimer: 30000});
 
       this.user = initiator ? this.userState.SENDER : this.userState.RECEIVER;
 
